@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form">
+        <div>
+            <p for="name">Name</p>
+        <input type="text" id="name" placeholder="name">
+        </div>
+        <div>
+            <p for="password">Password</p>
+            <input type="text" id="password" placeholder="password">
+        </div>
+        <div>
+            <p for="cpf">Cpf</p>
+            <input type="text" id="cpf" placeholder="cpf">
+        </div>
+        <div>
+            <button onclick="sendForm(event)">SEND</button>
+        </div>
+    </form>
+
+    <script>
+        function sendForm(e) {
+            e.preventDefault()
+            let form = document.querySelector("#form")
+            const data = {
+                name: form.name.value,
+                password: form.password.value,
+                cpf: form.cpf.value
+            }
+
+            fetch("http://localhost:3000/usuarios" , {
+                method: "POST",
+                body: JSON.stringify(data),
+                headers: {"Content-type": "application/json"},
+            })
+            .then((res) => res.text())
+            .then((data) => {
+                if(data){
+                    form.innerHTML = data;
+                }
+            })
+        }
+    </script>
+</body>
+</html>
