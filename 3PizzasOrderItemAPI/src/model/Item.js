@@ -8,7 +8,7 @@ const itemSchema = new mongoose.Schema({
     }
 })
 
-const item = mongoose.model("Itens", itemSchema);
+// const item = mongoose.model("Itens", itemSchema);
 
-module.exports.Item = item;
+// module.exports.Item = item;
 module.exports.ItemSchema = itemSchema;

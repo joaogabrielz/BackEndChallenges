@@ -1,0 +1,19 @@
+
+// tabela forte nao precisa de outra para existir, fraca precisa
+// como ex posts precisa de um usuario
+// token enviado pela header...
+// get -> /users/:id/posts --> se for usuario da sessao em vez do id manda '/me'
+// users/:id/posts/feed
+
+// import copia codigo de um lugar/pasta, efica acessivel no que chamou, nao pode ter msm nome
+// usamos require, em vez de import, poruqe usamos node, mas seria um import, escma/js usa import
+// mas basicamente é msm coisa soq node require, e ecma/js import...
+
+
+// statefull guarda sessao, muitos clientes pode dar problema de memoria
+// o statefull deixa informacoes na memoria, fica com informação até o usuario fehcar a sessao
+// ou der tempo de expiração, (statefll relaxado?), SOAP.
+
+// stateless ,nao persiste informacoes, ele envia o token e o back se vira para recuperar os dados com
+// o token, recupera com token e deois joga informacao fora, entao gerlamente API stateless, e
+// quem guarda infos aqui geralmente o front-end.
