@@ -9,6 +9,8 @@ const PIZZA_ENDPOINT = '/api/pizzas'
 
 // const itemController = require('./controllers/ItemController');
 // const ITEM_ENDPOINT = '/api/itens'
+// const itemController = require('./controllers/ItemController');
+// const ITEM_ENDPOINT = '/api/itens'
 
 const orderController = require('./controllers/OrderController');
 const ORDERS_ENDPOINT = '/api/orders'
