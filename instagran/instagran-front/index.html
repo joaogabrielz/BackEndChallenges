@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Instagren - SignIn</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="./css/sign-in.css">
+</head>
+<body>
+  <div id="main"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="./js/views/LoginView.js"></script>
+  <script type="text/javascript" src="./js/views/NavView.js"></script>
+  <script type="text/javascript" src="./js/views/EsqueciSenhaView.js"></script>
+  <script type="text/javascript" src="./js/views/SignUpView.js"></script>
+  <script type="text/javascript" src="./js/constrollers/LoginController.js"></script>
+  <script type="text/javascript" src="./js/constrollers/EsqueciSenhaController.js"></script>
+  <script type="text/javascript" src="./js/constrollers/SignUpController.js"></script>
+  <script type="text/javascript" src="./js/constrollers/HomeController.js"></script>
+  <script type="text/javascript" src="./js/models/Credenciais.js"></script>
+  <script type="text/javascript" src="./js/Navegacao.js"></script>
+
+  <script type="text/javascript">
+    new Navegacao().irParaLogin();
+  </script>
+</body>
+</html>
